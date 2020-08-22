@@ -3,10 +3,16 @@
 
 #include "pch.h"
 #include <iostream>
-
+void func1(int a[]) {
+	for (int i = 0; i < 6; i++) {
+		printf(",%d" + !i, a[i]);
+	}
+}
 int main()
 {
-    std::cout << "Hello World!\n"; 
+	int a[6] = { 1, 2, 3, 4, 5, 6 };
+	func1(a);
+	return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
