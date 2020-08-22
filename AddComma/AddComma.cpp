@@ -7,11 +7,20 @@ void func1(int a[]) {
 	for (int i = 0; i < 6; i++) {
 		printf(",%d" + !i, a[i]);
 	}
+	printf("\n");
+}
+void func2(int a[]) {
+	printf("%d", a[0]);
+	for (int i = 1; i < 6; i++) {
+		printf(",%d" + !i, a[i]);
+	}
+	printf("\n");
 }
 int main()
 {
 	int a[6] = { 1, 2, 3, 4, 5, 6 };
 	func1(a);
+	func2(a);
 	return 0;
 }
 
