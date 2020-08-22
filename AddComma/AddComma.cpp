@@ -16,11 +16,18 @@ void func2(int a[]) {
 	}
 	printf("\n");
 }
+void func3(int a[]) {
+	for (int i = 0; i < 6; ++i)
+		printf("%d,", a[i]);
+	printf("\b ");
+	printf("\n");
+}
 int main()
 {
 	int a[6] = { 1, 2, 3, 4, 5, 6 };
 	func1(a);
 	func2(a);
+	func3(a);
 	return 0;
 }
 
