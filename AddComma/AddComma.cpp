@@ -22,12 +22,20 @@ void func3(int a[]) {
 	printf("\b ");
 	printf("\n");
 }
+void func4(int a[]) {
+	for (int i = 0; i < 6; i++) {
+		i == 0 || printf(","); //短路运输算来在数字前打印逗号，首位不打印
+		printf("%d", a[i]);
+	}
+	printf("\n");
+}
 int main()
 {
 	int a[6] = { 1, 2, 3, 4, 5, 6 };
 	func1(a);
 	func2(a);
 	func3(a);
+	func4(a);
 	return 0;
 }
 
